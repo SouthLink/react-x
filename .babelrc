@@ -1,0 +1,9 @@
+{   
+    "presets": [
+        // "stage-2",
+        "@babel/preset-env",
+        "@babel/preset-react",
+        // { "useBuiltIns": "usage" }
+    ],
+    "plugins": ["@babel/plugin-transform-runtime"]
+}
