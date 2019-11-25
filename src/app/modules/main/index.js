@@ -1,2 +1,2 @@
 
-import { default as routes } from './config/routers';
+export { routes } from './config/routes';

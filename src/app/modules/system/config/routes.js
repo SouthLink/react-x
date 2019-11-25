@@ -1,6 +1,7 @@
 const base = '@/app/modules/system'
-import SysManagePage from `${base}/page/sysManage/index`;
-import UserManagePage from `${base}/page/userManage/index`;
+
+import SysManagePage from '@/app/modules/system/page/sysManage/index';
+import UserManagePage from '@/app/modules/system/page/userManage/index';
 
 export default () => ([{
     path: `/system-manage`,

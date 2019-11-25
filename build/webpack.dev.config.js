@@ -82,20 +82,20 @@ module.exports = {
         //     url: `http://localhost:${port}/`,
         // }),
         // 多线程打包
-        new HappyPack({
-            id:'reactJs',
-            loaders:['babel-loader?cacheDirectory'],
-            threadPool: happyThreadPool,
-            verbose: true,
-        })
+        // new HappyPack({
+        //     id:'reactJs',
+        //     loaders:['babel-loader?cacheDirectory'],
+        //     threadPool: happyThreadPool,
+        //     verbose: true,
+        // })
     ],
     module: {
         rules: [{
-            // yarn add babel-loader @babel/core @babel/preset-env --dev
+            // yarn add babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime   @babel/preset-react --dev
             test: /\.js[x]?$/,
             exclude: /node_modules/,
             use: [{
-                loader: "happypack/loader?id=reactJs"
+                loader: "babel-loader"
             }],
         }, {
             test: '/\.css$/',

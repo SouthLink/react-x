@@ -1,3 +1,5 @@
 // import * as models from './config/models';
 
-import { default as router } from './config/routers';
+export { default as routes } from './config/routes';
+
+ 

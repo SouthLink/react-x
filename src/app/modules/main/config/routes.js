@@ -2,9 +2,9 @@ const base = '@/app/modules/main'
 const MainPage = `${base}/MainPage`
 
 
-export default (childrens) => ([{
+export const routes = (childrens) => ([{
     path: `/`,
-    component: SysManagePage,
+    component: MainPage,
     title: '首页',
     children: childrens
 }])

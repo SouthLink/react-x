@@ -4,7 +4,7 @@ import { Button, Table } from 'antd';
 
 class sysManagePage extends PureComponent {
     constructor() {
-
+        super()
     }
 
     render() {
@@ -16,3 +16,5 @@ class sysManagePage extends PureComponent {
         )
     }
 }
+
+export default sysManagePage;
