@@ -17,7 +17,7 @@ function resolve(dir) {
 
 module.exports = {
     mode: 'development',
-    entry: [path.join(__dirname, "../src/app/App.js")],
+    entry: [path.join(__dirname, "../src/client/index.js")],
     devtool: 'source-map',
     // devtool: 'source-cheap-module-eval-source-map',
     output: {

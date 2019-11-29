@@ -1,2 +1,2 @@
 
-export { routes } from './config/routes';
+export { routes, LoginPage, Page404 } from './config/routes';

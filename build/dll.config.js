@@ -15,7 +15,8 @@ const vendors = [
 	"react-redux",
 	"react-router",
 	"redux",
-	"redux-thunk"
+	"redux-thunk",
+	"react-loadable"
 ]
 
 module.exports = {

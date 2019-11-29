@@ -1,11 +1,12 @@
 
 const importRoute = (route) => {
+    console.log(route)
     if (typeof route.component != 'string') {
         return route
     }
 
-    const path = route.component.replace('@/app/', '..');
-    router.component = require('@/app/' + path).default;
+    const path = route.component.replace('@/app/', '');
+    route.component = require('@/app/' + path).default;
 
     return route
 }
@@ -18,7 +19,7 @@ const dynamicImport = (routes = []) => {
         }
 
         if (typeof route.component == 'string') {
-            importRoute(route.children)
+            importRoute(route)
         }
 
         if (route.children) {

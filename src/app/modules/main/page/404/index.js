@@ -2,7 +2,7 @@ import React , { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { Button, Table } from 'antd';
 
-class Main extends PureComponent {
+class Page404 extends PureComponent {
     constructor() {
         super()
     }
@@ -10,10 +10,10 @@ class Main extends PureComponent {
     render() {
         return (
             <div>
-                这是Main组件
+                这是404
             </div>
         )
     }
 }
 
-export default Main;
+export default Page404;
